@@ -70,6 +70,14 @@ return ((5/9) * (fahrenheit -32) + 273.15);
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
 
+function lesser ( x , y){
+    if (x > y) {
+        return (y);
+} else {
+        return(x);
+}
+}
+
 // 10. Create a function called multigreeting that takes a name
 // and a language code and returns a version of "Hello, <name>!"
 // in the specified language. The supported languages and their
@@ -81,6 +89,32 @@ return ((5/9) * (fahrenheit -32) + 273.15);
 // eo - Saluton, <name>!
 //
 // If any other language code is used, return nothing.
+
+
+
+function multigreeting(names, language) {
+    if (language === 'en'){
+    return "Hello, " + names + '!';
+    }
+    else if (language === 'es'){
+    return "¡Hola, " + names + '!';
+    }
+    else if (language === 'fr'){
+    return 'Bonjour, ' + names + '!';
+    }
+    else if (language === 'eo'){
+    return 'Saluton, ' + names + '!';
+    }
+    else {return}
+
+}
+
+    
+
+
+
+
+
 
 // 11. The greatest common divisor (https://en.wikipedia.org/wiki/Greatest_common_divisor)
 // is the largest integer that, given two other integers, can be divided into them. For
